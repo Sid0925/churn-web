@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Churn Analysis KPIs </title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <header class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <div class="cross">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <ul class="main-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#work">Workflow</a></li>
+                  <li><a href="#dash">Dashboard</a></li>
+                  <li><a href="#about">About</a></li>
+              
+                </ul>
+              </nav>
+              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+              <div class="hero-text" >
+                <h2> Churn Analysis using Power BI and KPIs.</h2>
+                <p>I have developed a comprehensive customer churn data analysis dashboard using Power BI. The dashboard features multiple key performance indicators (KPIs) that provide valuable insights into customer behavior and trends, enabling better decision-making for reducing churn and increasing revenue growth</p>
+                <a href="#targetSection" class="btn btn-lg btn-primary">Know More</a>
+                 
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="case-study">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="sub-heading" id="targetSection">KPI-driven Churn Analysis: Leveraging Power BI for Insights</h4>
+              <h1 class="heading purple"><span class="purple">Objective</span> Achieved  </h1>
+              <!-- Swiper -->
+              
+
+                  
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                     
+                            <p><strong>Improved Decision-Making:</strong> The objective of developing the customer churn data analysis dashboard using Power BI has been achieved. The dashboard provides key stakeholders with valuable insights into customer behavior and trends, enabling them to make informed and data-driven decisions. This empowers the company to take proactive measures and implement strategies to reduce customer churn and increase revenue growth.</p>
+                            <p><strong>Enhanced Understanding of Customer Metrics:</strong> By accurately calculating and displaying essential KPIs such as customer churn rate, retention rate, MRR, CLV, ARPC, average customer lifespan, and churn customers, the project has achieved the objective of enhancing the company's understanding of its customer metrics. These metrics offer a comprehensive view of the customer base and provide valuable information for identifying areas for improvement and optimizing customer retention strategies.</p>
+                            <p><strong>Data Accuracy and Consistency:</strong> The objective of ensuring data accuracy and consistency across the dashboard has been achieved through the use of Power Query tools. By cleaning and transforming the raw data, including merging tables, filtering data, and calculating custom metrics, the project has established a reliable and consistent dataset for analysis. This ensures that the insights and findings from the dashboard are based on accurate and reliable information.</p>
+                            <p><strong>Effective Communication of Insights:</strong> The project has successfully achieved the objective of effectively communicating insights and findings from the dashboard to key stakeholders. By presenting the information in a visually appealing and easily understandable manner, stakeholders can grasp the implications and take appropriate actions. This facilitates a data-driven decision-making process and encourages proactive measures to improve customer retention and drive revenue growth.</p>
+                            <p>Overall, the project has achieved its objectives of improving decision-making, enhancing the understanding of customer metrics, ensuring data accuracy and consistency, and effectively communicating insights. These accomplishments contribute to the company's ability to address the business question of reducing customer churn and increasing revenue growth.</p>
+                          </div>
+                        </div>
+                         
+              
+              
+          
+
+ 
+
+
+
+
+
+
+
+
+
+
+              
+              <!-- Add Arrows -->
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="container">
+          <div class="row">
+            <div id="work"></div>
+            <div class="col-md-12">
+              <h4 class="sub-heading">Data Workflow and formula IMPLEMENTATION</h4>
+              <h1 class="heading pink"><span class="pink">Key Performance Indicators</span> <br>Data Transformation</h1>
+            </div>
+          </div>  
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Swiper -->
+
+
+
+                      <div class="swiper-container testimonial-swiper">
+                    
+                    
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide testimonial-box pink">
+                     
+                      <div class="video-wrapper">
+                        <video src="dax.mp4" autoplay muted loop></video>
+                     </div>
+                     <h1>KPIs Formulas Used</h1>
+                      <p><h4>Churn Rate:</h4> <p> Calculates the ratio of churned customers to the total number of customers, using the CALCULATE function with COUNTROWS and FILTER to count the rows in the 'Churn' table where the churn status is "Yes."</p>
+
+                      <p><h4>Average Customer Lifespan:</h4><p> Calculates the average duration of the customer relationship for churned customers, using the DIVIDE function with CALCULATE, SUM, and FILTER to calculate the sum of 'tenure' for churned customers and then divide it by the total number of customers.</p>
+                      
+                      <p><h4>Customer Lifetime Value (CLV):</h4><p>  Calculates the customer lifetime value by dividing the total revenue by the total number of customers and multiplying it by the average customer lifespan. It uses CALCULATE, SUM, FILTER, and DIVIDE functions to calculate the sum of 'tenure' for churned customers, divide it by the total number of customers, and then multiply it by the total revenue.</p>
+                     
+                      <p><h4>Monthly Recurring Revenue</h4><p> Calculates the Monthly Recurring Revenue (MRR) by summing the 'MonthlyCharges' column for each row in the 'Churn' table, using the SUMX function. It iterates over each row in the table and adds up the monthly charges for all customers.</p>
+
+                      <p><h4>Non Churn Cust:</h4><p>  Calculates the count of non-churn customers using the <b>CALCULATE</b> function with <b>FILTER</b> to count the rows in the 'Churn' table where the churn status is "No."</p>
+
+                      <p><h4>Active Months:</h4><p>  Calculates the total number of months that non-churn customers have been active using the CALCULATE function with SUM and FILTER to calculate the sum of 'tenure' for non-churn customers.</p>
+                      
+                      <p><h4>Active Customers:</h4> <p> Calculates the count of active customers using the COUNTROWS function with FILTER to count the rows in the 'Churn' table where the churn status is "No."</p>
+                      
+                      <p><h4>Churn Cust:</h4><p>  Calculates the count of churned customers using the CALCULATE function with FILTER to count the rows in the 'Churn' table where the churn status is "Yes."</p>
+                      
+                      <p><h4>Customer Retention Rate:</h4><p>  Calculates the customer retention rate by subtracting the count of lost customers from the total number of customers and then dividing it by the total number of customers.</p>
+                      
+
+
+                    
+                    </div>
+                
+               
+
+                    <div class="swiper-slide testimonial-box purple">
+                      <ul>
+                        <h1>Power Query Data Cleaning and transformation</h1>
+                        <li><p>Standardize and normalize data formats across different fields to facilitate seamless integration and analysis.</p></li>
+                        <li><p>Handle data outliers and anomalies through techniques such as data smoothing, outlier detection, and appropriate data transformation methods.</p></li>
+                        <li><p>Remove irrelevant or redundant variables/columns that do not contribute to the analysis or contain duplicate or redundant information.</p></li>
+                        <li><p>Identify and resolve inconsistent or conflicting data values, ensuring data consistency and integrity throughout the dataset.</p></li>
+                        <li><p>Perform data validation and verification to ensure that the data meets defined quality standards and aligns with the expected data structure.</p></li>
+                        <li><p>Implement data imputation techniques to fill in missing values based on appropriate methods such as mean, median, or regression.</p></li>
+                        <li><p>Cleanse and correct textual data by removing special characters, correcting typos, and standardizing text formats for consistency.</p></li>
+                        <li><p>Handle data relationships and dependencies by ensuring referential integrity and resolving any conflicts or inconsistencies.</p></li>
+                        <li><p>Conduct exploratory data analysis to identify patterns, anomalies, and data quality issues that require further cleaning or refinement.</p></li>
+                        <li><p>Document the data cleaning processes and steps taken to maintain transparency and reproducibility of the data cleaning efforts.</p></li>
+                        <li><p>Collaborate with data stakeholders and domain experts to validate and refine the data cleaning approaches, ensuring the accuracy and relevance of the cleaned data.</p></li>
+                      </ul>
+                    
+               
+                  </div>
+
+ 
+
+
+               
+                  <div class="swiper-slide testimonial-box blue">
+                    <div class="data-cleaning-workflow">
+                      <h3>Data Cleaning Workflow</h3>
+                      <ol>
+                        <li><p>Data Assessment: Start by thoroughly understanding the dataset and its structure. Identify the variables, data types, and any potential data quality issues or inconsistencies.</li></p>
+                        <li><p>Data Profiling: Perform initial data profiling to gain insights into the dataset. This includes assessing data distributions, checking for missing values, outliers, and identifying potential data quality issues.</li></p>
+                        <li><p>Standardize Data Formats: Standardize data formats across different fields to ensure consistency and facilitate seamless integration. This may involve converting date formats, normalizing text values, or standardizing categorical variables.</li></p>
+                        <li><p>Handle Missing Values: Implement data imputation techniques to handle missing values. This can be done using methods such as mean, median, or regression imputation based on the characteristics of the variables and the data.</li></p>
+                        <li><p>Cleanse Textual Data: Cleanse textual data by removing special characters, correcting typos, and standardizing text formats. This can involve techniques like removing punctuation, applying case normalization, or using regular expressions for pattern matching and text manipulation.</li></p>
+                        <li><p> Remove Irrelevant or Redundant Variables: Identify and remove variables/columns that do not contribute to the analysis or contain duplicate or redundant information. This helps streamline the dataset and improves data processing efficiency.</li></p>
+                        <li><p> Address Data Outliers and Anomalies: Handle data outliers and anomalies through techniques such as data smoothing, outlier detection algorithms, or appropriate data transformation methods. This helps ensure that extreme values do not skew the analysis or modeling results.</li></p>
+                        <li><p> Ensure Data Consistency and Integrity: Identify and resolve inconsistent or conflicting data values to maintain data consistency and integrity throughout the dataset. This can involve techniques such as data validation rules or resolving discrepancies between related variables.</li></p>
+                        <li><p> Validate Data Quality and Structure: Perform data validation and verification to ensure that the cleaned data meets defined quality standards and aligns with the expected data structure. This includes checking data ranges, constraints, and validating against predefined rules or business requirements.</li></p>
+                        <li><p> Document Data Cleaning Processes: Document the data cleaning processes and steps taken to maintain transparency and reproducibility. This includes documenting the techniques, transformations, and validations applied, as well as any decisions made during the cleaning process.</li></p>
+                      </ol>
+                    </div>
+              
+                  </div>
+                  
+                  
+                 <div class="text-right">
+                   
+                    <p class="designation"><a href="#">Know More &#8594;</a></p>
+                 </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+ 
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><br><br><br>
+
+      <!-- Statistics -->
+  
+      
+ 
+  
+      
+      <section class="case-study">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 id="dash" class="sub-heading" id="targetSection">Two Pages Dashboard</h4>
+              <h1 class="heading purple"><span class="purple">Customer Churn with KPIs</span> And <br>Factore for Churn</h1>
+              <!-- Swiper -->
+              <div class="swiper-container client-swiper">
+                 <div ></div>
+                  <div class="swiper-slide client-box">
+                    <div class="video-wrapper">
+                      <video src="churn.mp4" autoplay muted loop></video>
+                   </div><br>
+                    
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <div class="video-wrapper">
+                      <video src="sec.mp4" autoplay muted loop></video>
+                   </div><br>
+                     
+                 
+                </div>
+                <!-- Add Arrows -->
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+ 
+           
+          <p class="designation"><a href="#">Know More &#8594;</a></p>
+       </div>
+      </div>
+
+ 
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row footer">
+            <div id="about"></div>
+            <div class="col-md-12 text-center"id="about">
+              <h1 > Siddharh<br><span>Chikalkar</span></h1>
+              <p> I am currently pursuing an MSc in Data Analytics at Aston University in Birmingham. I hold a Bachelor's degree in Computer Application (BCA) from India, where I achieved a GPA of 8.68. With a strong foundation in data analytics and computer science, I have developed a diverse skill set. I am experienced in utilizing tools such as Power BI, SQL, and Excel for data management, visualization, and analysis. Through various projects, I have gained expertise in data cleaning, transformation, and developing insightful dashboards. Additionally, I have worked on machine learning projects, applying algorithms for loan approval prediction and facial expression detection. My passion for leveraging data to drive informed decision-making is matched by my proficiency in Python, Django, and TensorFlow. With a keen eye for detail and a drive for continuous learning, I am dedicated to delivering accurate and impactful data-driven solutions.</p>
+              <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/siddharth-chikalkar-7244141b0"><img src="assets/behance.png"></a></li>
+                 
+                
+              </ul>
+            </div>
+          </div>
+           
+          </div>
+        </div>
+      </footer>
+
+      <!-- Some Javascript -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/swiper.jquery.min.js"></script>
+      <!-- Initialize Client Swiper -->
+      <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script>
+      // Counterup
+      $('.counter').counterUp({
+        time: 1000
+      });
+
+      // Main Navigation
+      $('#menu-toggle').click(function(){
+        $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+      })
+      </script>
+
+      <!-- Google Analytics - You should remove this -->
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29231762-2', 'auto');
+      ga('send', 'pageview');
+
+      </script>
+    </body>
+    </html>
